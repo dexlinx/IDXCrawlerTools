@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>IDX Crawler Tools</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+		<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="PUBLIC">
+
+		<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+		<script src="progress/progress.js"></script>
+
+<!--<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css&skin=desert&callback=js_indent"></script>-->
+
+		<script>
+		$(window).load(function() {
+			// Animate loader off screen
+		 progressJs().end();
+			$(".se-pre-con").fadeOut("slow");
+ 					});
+		</script>
+
+
+		<script>
+		window.location.hash="no-back-button";
+		window.location.hash="Again-No-back-button";//again because google chrome don't insert first hash into history
+		window.onhashchange=function(){window.location.hash="no-back-button";}
+		</script>
+
+
+
+		<!-- Le styles -->
+	<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/bootstrap-responsive.css" rel="stylesheet">
+		<link href="progress/progressjs.css" rel="stylesheet">
+
+<style>
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(images/Preloader_3.gif) center no-repeat #fff;
+}
+
+.progressjs-theme-blue .progressjs-inner{
+	height:20px;
+	transition: all 0.s3 ease-out;
+	background-color:#263C8E;
+}
+
+#demo{
+  padding-left:10px;
+}
+#frames{
+  padding-left:10px;
+}
+.pagesReturnedContainer{
+	position: relative;
+	background-color: rgb(219, 236, 222);
+	width: 1009px;
+	left: 90px;
+}
+.framesReturnedContainer{
+	position: relative;
+	background-color: rgb(219, 236, 222);
+	width: 1009px;
+	left: 0px;
+}
+button.btn, input.btn[type="submit"] {
+    width: 100%;
+}
+
+.insidePreCon {
+	    margin-right: auto;
+	    margin-bottom: 0px;
+	    margin-left: auto;
+	    width: 750px;
+	    margin-top: 300px;
+	    height: 450px;
+}
+
+pre, code, xmp {
+ padding:10px;
+ box-sizing:border-box;
+ -moz-box-sizing:border-box;
+ webkit-box-sizing:border-box;
+ display:block;
+ white-space: pre-wrap;
+ white-space: -moz-pre-wrap;
+ white-space: -pre-wrap;
+ white-space: -o-pre-wrap;
+ word-wrap: break-word;
+ width:100%; overflow-x:auto;
+}
+</style>
+		</head>
+			<body>
+
+				<script>
+				progressJs().start().autoIncrease(1, 1200).onprogress(function(targetElm,percent) {if(percent > 99){progressJs().set(1);}});
+			 </script>
+
+
+		<div class='se-pre-con'><div class='insidePreCon'><center><a href=index.php><b>Stop Crawl - Run Another Site</b></a></center></div></div>
+		<!-- Navbar
+		  ================================================== -->
+
+		<div class='container'><p><center>Menu: <a href=index.php>Original Crawler</a> | <a href=dynwrappercheck.php>Dynamic Wrapper Check</a> | <a href=wrapperCreator.php>Static Wrapper Creator</a></p></center>
+			<!-- Masthead
+		================================================== -->
+			<header class="jumbotron subhead" id="idx"><img src=images/IDXRobot.png>
+				<h1>IDX Crawler Tools (Beta)</h1><p>
+							</header>
+			<section id="keys">
+				<a href="https://github.com/dexlinx/crawler"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>
